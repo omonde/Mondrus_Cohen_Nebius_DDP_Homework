@@ -9,3 +9,9 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+
+# Original cluster config with SSH key
+mk8s-ng-config.json
+
+# Optional: generated archives
+*.zip

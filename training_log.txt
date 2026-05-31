@@ -1,0 +1,8 @@
+[0] NCCL INFO Bootstrap : Using eth0:10.26.2.138<0>
+[0] NCCL INFO NET/Plugin : No plugin found, using internal net plugin
+[0] NCCL INFO Connected all rings, use ring PXN 0 GDR 0
+
+train_loss: 20.54
+eval_loss: 14.68
+
+Job finished (status: SUCCEEDED)

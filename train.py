@@ -52,8 +52,8 @@ def main():
     model = model.to(local_rank)
 
     # ── Dataset ────────────────────────────────────────────────────────
-    train_dataset = load_dataset("wikitext", "wikitext-2-v1", split="train")
-    eval_dataset = load_dataset("wikitext", "wikitext-2-v1", split="validation")
+    train_dataset = load_dataset("Salesforce/wikitext", "wikitext-2-v1", split="train")
+    eval_dataset = load_dataset("Salesforce/wikitext", "wikitext-2-v1", split="validation")
     block_size = min(int(os.environ.get("BLOCK_SIZE", 512)), tokenizer.model_max_length)
     per_device_train_batch_size = int(os.environ.get("PER_DEVICE_TRAIN_BATCH_SIZE", 8))
     per_device_eval_batch_size = int(os.environ.get("PER_DEVICE_EVAL_BATCH_SIZE", 8))
